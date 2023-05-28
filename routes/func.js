@@ -4,7 +4,7 @@ const User = require('../models/User')
 // create 1 million users just by a function call
 exports.createMassUsers = async () => {
   const start = new Date()
-  const amount = 1000
+  const amount = 1000000
   for (let i = 0; i < amount; i++) {
     await User.create({
       firstName: faker.person.firstName(),
